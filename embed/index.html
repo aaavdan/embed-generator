@@ -1,16 +1,24 @@
+<p>Nothing.</p>
+
+<body onload="myFunction()">
 <form id="embed">
-   <meta content="" property="og:title" />
-   <meta content="Site Description" property="og:description" />
-   <meta content="#43B581" data-react-helmet="true" name="theme-color" />
+   <meta content=<span id="title"></span> property="og:title" />
+   <meta content=<span id="description"></span> property="og:description" />
+   <meta content=<span id="color"></span> data-react-helmet="true" name="theme-color" />
 </form>
 
 <script>
 let form = document.forms.embed;
-var og:title = getUrlParameter('title');
-var og:description = getUrlParameter('description');
-var theme-color = getUrlParameter('color');
+var title = getUrlParameter('title');
+var description = getUrlParameter('description');
+var color = getUrlParameter('color');
 
-console.log(og:title);
-console.log(og:description);
-console.log(theme-color);
+document.getElementById("title").innerHTML = title;
+document.getElementById("description").innerHTML = description;
+document.getElementById("color").innerHTML = color;
+
+console.log(title);
+console.log(description);
+console.log(color);
 </script>
+</body>
