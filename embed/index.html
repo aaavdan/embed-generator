@@ -13,9 +13,11 @@ var title = getUrlParameter('title');
 var description = getUrlParameter('description');
 var color = getUrlParameter('color');
 
-document.getElementById("title").innerHTML = title;
-document.getElementById("description").innerHTML = description;
-document.getElementById("color").innerHTML = color;
+function myFunction() {
+    document.getElementById("title").innerHTML = title;
+    document.getElementById("description").innerHTML = description;
+    document.getElementById("color").innerHTML = color;
+};
 
 console.log(title);
 console.log(description);
