@@ -1,26 +1,26 @@
-<p>aNothing else.</p>
+<p>auNothing else.</p>
 
 <body onload="myFunction()">
 <form id="embed">
-   <meta id="title" property="og:title" />
-   <meta id="description" property="og:description" />
-   <meta id="color" data-react-helmet="true" name="theme-color" />
+  <div id="title">
+   <meta content="title" property="og:title" />
+  </div>
+  <div id="description">
+   <meta content="description" property="og:description" />
+  </div>
 </form>
 
 <script>
 let form = document.forms.embed;
 var title = getUrlParameter('title');
 var description = getUrlParameter('description');
-var color = getUrlParameter('color');
 
 function myFunction() {
     document.getElementById("title").innerHTML = title;
     document.getElementById("description").innerHTML = description;
-    document.getElementById("color").innerHTML = color;
 };
 
 console.log(title);
 console.log(description);
-console.log(color);
 </script>
 </body>
