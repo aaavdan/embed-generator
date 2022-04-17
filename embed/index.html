@@ -1,8 +1,18 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+<style>
+p, strong {
+   font-family: 'Roboto';
+}
+</style>
+
 <p>Эта страница и должна быть пустая.</p>
 <p>&nbsp;</p>
 <p>Её фишка в том, что она создаёт эмбед через ссылку в&nbsp;<strong>Discord</strong>.</p>
 <p>Вот как выглядит эмбед:</p>
-<p style="margin: 3%;"><span style="background-color: #808080; border-left: 4px solid #636363; border-radius: 5px; color: white; margin: 2%;", id="description"></span></p>
+<p style="margin: 3%;"><span style="background-color: #808080; border-left: 4px solid #636363; border-radius: 5px; color: white; margin: 2%;", id="text"></span></p>
 
 <body onload="myFunction()">
 <form id="embed">
@@ -10,11 +20,10 @@
 </form>
 
 <script>
-let form = document.forms.embed;
-var description = getUrlParameter('text');
+var text = getUrlParameter('text');
 
 function myFunction() {
-    document.getElementById("description").InnerHTML = description;
+    document.getElementById("text").InnerHTML = text;
 };
 </script>
 </body>
