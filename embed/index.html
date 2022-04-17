@@ -8,10 +8,6 @@ p, strong {
 }
 </style>
 
-<p>Эта страница и должна быть пустая.</p>
-<p>&nbsp;</p>
-<p>Её фишка в том, что она создаёт эмбед через ссылку в&nbsp;<strong>Discord</strong>.</p>
-<p>Вот как выглядит эмбед:</p>
 <p style="margin: 3%;"><span style="background-color: #808080; border-left: 4px solid #636363; border-radius: 5px; color: white; margin: 2%;", id="text"></span></p>
 
 <body onload="myFunction()">
@@ -20,7 +16,7 @@ p, strong {
 </form>
 
 <script>
-var text = getUrlParameter('text');
+var text = 'dh';
 
 function myFunction() {
     document.getElementById("text").InnerHTML = text;
