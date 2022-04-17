@@ -1,26 +1,20 @@
-<p>auNothing else.</p>
+<p>Эта страница и должна быть пустая.</p>
+<p>&nbsp;</p>
+<p>Её фишка в том, что она создаёт эмбед через ссылку в&nbsp;<strong>Discord</strong>.</p>
+<p>Вот как выглядит эмбед:</p>
+<p style="margin: 3%;"><span style="background-color: #808080; border-left: 4px solid #636363; border-radius: 5px; color: white; margin: 2%;", id="description"></span></p>
 
 <body onload="myFunction()">
 <form id="embed">
-  <div id="title">
-   <meta content="title" property="og:title" />
-  </div>
-  <div id="description">
-   <meta content="description" property="og:description" />
-  </div>
+   <meta content="" id="description" property="og:description" />
 </form>
 
 <script>
 let form = document.forms.embed;
-var title = getUrlParameter('title');
-var description = getUrlParameter('description');
+var description = getUrlParameter('text');
 
 function myFunction() {
-    document.getElementById("title").innerHTML = title;
-    document.getElementById("description").innerHTML = description;
+    document.getElementById("description").InnerHTML = description;
 };
-
-console.log(title);
-console.log(description);
 </script>
 </body>
